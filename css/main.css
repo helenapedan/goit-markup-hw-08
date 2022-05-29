@@ -115,15 +115,42 @@ a {
 }
 
 .header-nav__logo {
-  display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+  .header-nav__logo {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 276px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.08;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .header-nav__list {

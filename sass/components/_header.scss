@@ -10,97 +10,121 @@
 }
 
 .header-nav__logo {
-    display: block;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+   
+
+    @media screen and (max-width: $mobile) {
+        display: inline-block;
+        margin-right: 276px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 24px;
+        line-height: 1.08;
+        
+}
 
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    color: $main-text-color;
-}
-
-.header-nav__list {
-    display: flex;
-}
-
-.header-nav__link {
-    display: block;
-    padding: 32px 0px;
-
-    transition: color $transition-duration $transition-timing-function;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: $main-text-color;
-
-    &:hover {color:$brand-color};
     
-    &--current {
-        color:$brand-color};
-    &--current::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        bottom: -1px;
-        width: 100%;
-        height: 4px;
-        margin: 0;
-        padding: 0;
-        background-color: $brand-color;
-        border-radius: 2px;
-        }
+    color: $main-text-color;
 }
 
-.header-nav__item {
-    position: relative;
-
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
-}
-
-.header-contacts {
-    display: flex;
-    margin-left: auto;
+.menu-button {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
     padding: 0;
 }
 
-.header-contacts__item {
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
     display: block;
-
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
 }
 
-.header-contacts__link {
-    display: flex;
-    align-items: center;
-    padding: 32px 0px;
-
-    transition: color $transition-duration $transition-timing-function;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: $text-color;
-
-    &:hover {
-            color: $brand-color;
-        }
+.menu-button.is-open .icon-menu {
+    display: none;
 }
 
+// .header-nav__list {
+//     display: flex;
+// }
 
-.header-contacts__icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
+// .header-nav__link {
+//     display: block;
+//     padding: 32px 0px;
+
+//     transition: color $transition-duration $transition-timing-function;
+
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     color: $main-text-color;
+
+//     &:hover {color:$brand-color};
+    
+//     &--current {
+//         color:$brand-color};
+//     &--current::after {
+//         position: absolute;
+//         content: '';
+//         left: 0;
+//         bottom: -1px;
+//         width: 100%;
+//         height: 4px;
+//         margin: 0;
+//         padding: 0;
+//         background-color: $brand-color;
+//         border-radius: 2px;
+//         }
+// }
+
+// .header-nav__item {
+//     position: relative;
+
+//     &:not(:last-child) {
+//             margin-right: 50px;
+//         }
+// }
+
+// .header-contacts {
+//     display: flex;
+//     margin-left: auto;
+//     padding: 0;
+// }
+
+// .header-contacts__item {
+//     display: block;
+
+//     &:not(:last-child) {
+//             margin-right: 50px;
+//         }
+// }
+
+// .header-contacts__link {
+//     display: flex;
+//     align-items: center;
+//     padding: 32px 0px;
+
+//     transition: color $transition-duration $transition-timing-function;
+
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     color: $text-color;
+
+//     &:hover {
+//             color: $brand-color;
+//         }
+// }
+
+
+// .header-contacts__icon {
+//     margin-right: 10px;
+//     fill: currentColor;
+// }
