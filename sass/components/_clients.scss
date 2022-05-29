@@ -1,0 +1,27 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.clients-item__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: $transition-duration $transition-timing-function, border-color $transition-duration $transition-timing-function;
+
+    &:hover {
+            fill: $brand-color;
+            border-color: $brand-color;
+    }
+}

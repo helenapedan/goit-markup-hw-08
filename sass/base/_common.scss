@@ -1,0 +1,92 @@
+body {
+    font-family: $main-font;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: $main-text-color;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.logo-accent {
+    color: $brand-color;
+}
+
+.title--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.social-item__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    border-radius: 50%;
+
+    transition: background-color $transition-duration $transition-timing-function, fill $transition-duration $transition-timing-function;
+
+    &:hover {
+        background-color: $brand-color;
+        fill: $white-color;
+    }
+
+    &--inverse-color {
+        fill: $white-color;
+        background: rgba(255, 255, 255, 0.1);
+        transition: background $transition-duration $transition-timing-function;
+
+        &:hover {
+                background: $brand-color;
+            }
+    }
+}

@@ -1,0 +1,81 @@
+.footer-section {
+    padding: 60px 0px;
+    height: 252px;
+
+    background-color: #2F303A;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address-wrap {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: $white-color;
+}
+
+.footer__adress {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $white-color;
+}
+
+.footer__contacts {
+    display: block;
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.appeal__wrap {
+    margin-right: 93px;
+}
+
+.appeal__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer__input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    color: $white-color;
+}
+
+
+.footer__button {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 28px;
+    margin-left: 12px;
+}
+
+.footer__icon {
+    margin-left: 10px;
+}
