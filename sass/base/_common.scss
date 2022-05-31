@@ -27,15 +27,14 @@ a {
 }
 
 .container {
-
-    @media screen and (max-width: $mobile) {
-    width: 480px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    }
-
     box-sizing: border-box;
+
+    @media screen and (max-width:480px) {
+        width: 480px;
+    }
 }
 
 .logo-accent {
@@ -56,16 +55,28 @@ a {
 }
 
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+   }
 }
 
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 33px;
+    line-height: 1.18;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .social-item__link {
@@ -76,21 +87,21 @@ a {
     align-items: center;
     fill: #AFB1B8;
     border-radius: 50%;
-
+    
     transition: background-color $transition-duration $transition-timing-function, fill $transition-duration $transition-timing-function;
-
+    
     &:hover {
         background-color: $brand-color;
         fill: $white-color;
     }
-
+    
     &--inverse-color {
         fill: $white-color;
         background: rgba(255, 255, 255, 0.1);
         transition: background $transition-duration $transition-timing-function;
-
+    
         &:hover {
-                background: $brand-color;
-            }
+            background: $brand-color;
+        }
     }
 }
