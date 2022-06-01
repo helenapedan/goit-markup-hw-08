@@ -19,22 +19,24 @@
     <header class="section header">
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-nav__logo"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <button
-            type="button"
-            class="menu-button"
-            data-menu-button
-            aria-expanded="false"
-            aria-controls="menu-container"
-          >
-            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-              <use class="icon-menu" href="./img/icons.svg#icon-menu-burger"></use>
-              <use class="icon-cross" href="./img/icons.svg#icon-close-burger"></use>
-            </svg>
-          </button>
-          <div class="menu-container" id="menu-container">
+          <div class="header-nav__container">
+            <a href="./index.html" class="header-nav__logo"
+              ><span class="logo-accent">Web</span>Studio</a
+            >
+            <button
+              type="button"
+              class="menu-button"
+              data-menu-button
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./img/icons.svg#icon-menu-burger"></use>
+                <use class="icon-cross" href="./img/icons.svg#icon-close-burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="menu-container" data-menu id="menu-container">
             <ul class="header-nav__list">
               <li class="header-nav__item">
                 <a href="./index.html" class="header-nav__link header-nav__link--current">Студия</a>
@@ -59,6 +61,12 @@
                   >+38 096 111 11 11</a
                 >
               </li>
+            </ul>
+            <ul class="header-nav__social-list">
+              <li class="header-nav__social-item"><a href="./">Instagram</a></li>
+              <li class="header-nav__social-item"><a href="./">Twitter</a></li>
+              <li class="header-nav__social-item"><a href="./">Facebook</a></li>
+              <li class="header-nav__social-item"><a href="./">LinkedIn</a></li>
             </ul>
           </div>
         </nav>

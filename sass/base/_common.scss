@@ -31,10 +31,16 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    width: 480px;
 
-    @media screen and (max-width:480px) {
-        width: 480px;
-    }
+    // @media screen and (min-width:768px) {
+    //     width: 768px;
+    // }
+
+    // @media screen and (min-width:1200px) {
+    //     width: 1200px;
+    // }
 }
 
 .logo-accent {
