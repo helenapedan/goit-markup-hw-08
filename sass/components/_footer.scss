@@ -1,0 +1,30 @@
+.footer-section {
+    padding: 60px 0px;
+    height: 603px;
+
+    background-color: #2F303A;
+
+    @media screen and (min-width:1200px) {
+        height: 252px;
+    }
+}
+
+.footer-container {
+
+    @media screen and (min-width:1200px){
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__address-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    @media screen and (min-width:1200px){
+        margin-right: 70px;
+    }
+   
+}

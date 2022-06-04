@@ -96,7 +96,7 @@ a {
     
     transition: background-color $transition-duration $transition-timing-function, fill $transition-duration $transition-timing-function;
     
-    &:hover {
+    &:hover, &:focus {
         background-color: $brand-color;
         fill: $white-color;
     }
@@ -106,7 +106,7 @@ a {
         background: rgba(255, 255, 255, 0.1);
         transition: background $transition-duration $transition-timing-function;
     
-        &:hover {
+        &:hover, &:focus {
             background: $brand-color;
         }
     }
