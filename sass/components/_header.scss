@@ -5,8 +5,15 @@
 }
 
 .header-nav {
-    display: inline-block;
     align-items: center;
+
+    @media screen and (max-width:767px) {
+        display: inline-block;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .header-nav__container {
@@ -14,39 +21,37 @@
 }
 
 .header-nav__logo {
-    display: inline-block;
-    margin-right: 276px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 24px;
-    line-height: 1.08;
-
     color: $main-text-color;
     font-family: $secondary-font;
     font-weight: 700;
 
-    @media screen and (min-width:768px) {
-        margin-right: 88px;
-        padding-top: 26px;
-        padding-bottom: 26px;
+    @media screen and (max-width:767px) {
+        display: inline-block;
+        margin-right: 276px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 24px;
+        line-height: 1.08;
     }
 
     @media screen and (min-width:768px) {
+        display: block;
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        font-size: 24px;
+        line-height: 1.19;
+    }
+
+    @media screen and (min-width:1200px) {
         margin-right: 93px;
         padding-top: 24px;
         padding-bottom: 25px;
         font-size: 26px;
-        line-height: 1.19;
+        line-height: 1.17;
         }
     
-    font-family: $secondary-font;
-    font-weight: 700;
     
-    color: $main-text-color;
-    font-family: $secondary-font;
-    font-weight: 700;
-    
-    color: $main-text-color;
 }
 
 .menu-button {
@@ -55,7 +60,7 @@
     background-color: transparent;
     padding: 0;
     right: 0;
-    z-index: 3;
+    z-index: 1;
     &:hover, &:focus {
         fill: $brand-color;
     }
@@ -78,30 +83,30 @@
 }
 
 .menu-container {
-    display: none;
-    position: fixed;
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 48px 40px;
-   
-
-    background-color:$white-color;
-
-    &.is-open {
-        display: block;
+    @media screen and (max-width:767px) {
+        display: none;
+        position: fixed;
+        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 48px 40px;
+        
+        
+        background-color: $white-color;
+        
+        &.is-open {
+            display: block;
+        }
     }
-
-
-    // @media screen and (max-width:767px) {
-    //     display: none;
-    // }
 }
 
 .header-nav__list {
-    display: block;
+
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -150,10 +155,12 @@
 }
 
 .header-nav__item {
-    &:not(:last-child) {
-            margin-bottom: 32px;
+    @media screen and (max-width:767px) {
+        &:not(:last-child) {
+        margin-bottom: 32px;
         }
-
+    }
+    
     @media screen and (min-width:768px) {
         &:not(:last-child) {
                 margin-right: 50px;
@@ -162,9 +169,15 @@
 }
 
 .header-contacts {
-    display: block;
-    margin-top: 302px;
+    @media screen and (max-width:767px) {
+        display: block;
+        margin-top: 302px;
+    }
 
+    @media screen and (min-width:768px) {
+        display: inline-block;
+    }
+    
     @media screen and (min-width:1200px) {
         display: flex;
         margin-left: auto;
@@ -184,11 +197,17 @@
 
 .header-contacts__link {
     color: $text-color;
+    letter-spacing: 0.02em;
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         font-size: 34px;
         line-height: 1.18;
-        letter-spacing: 0.02em;
+        
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+        line-height: 1.17;
     }
 
     @media screen and (min-width:1200px) {
@@ -201,7 +220,6 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
-            letter-spacing: 0.02em;
         
             &:hover {
                 color: $brand-color;

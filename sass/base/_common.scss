@@ -84,7 +84,11 @@ a {
         line-height: 1.17;
     }
 }
-
+.social-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
 .social-item__link {
     display: flex;
     width: 44px;
