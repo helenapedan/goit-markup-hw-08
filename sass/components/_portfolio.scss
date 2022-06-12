@@ -51,9 +51,17 @@
 }
 
 .projects-list {
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+       
         margin-top: 50px;
     }
     
@@ -64,24 +72,35 @@
         transform: translateY(0%);
     }
 
+    &:hover {
+         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
     @media screen and (max-width:767px) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-        
-        
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: calc((100% - 30px) / 2);
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (min-width:1200px) {
         position: relative;
-        width: calc((100% - 60px) / 3);
         margin-right: 30px;
         margin-bottom: 30px;
+        width: calc((100% - 60px) / 3);
         transition: transform $transition-duration $transition-timing-function;
-        
-        &:hover {
-             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
         
         &:nth-child(3n) {
             margin-right: 0px;
@@ -106,16 +125,24 @@
 .projects-content__text {
     position: absolute;
     display: inline-block;
+    height: 294px;
     padding: 63px 24px;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform $transition-duration $transition-timing-function;
 
     font-size: 18px;
     line-height: 1.55;
 
-    width: 450px;
-    height: 294px;
+    @media screen and (max-width:767px) {
+        width: 450px;
+        
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 354px;
+    }
+    
 
     background: rgba(33, 150, 243, 0.9);
     color: $white-color;
