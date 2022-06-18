@@ -1,5 +1,5 @@
 .filter {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: inline-flex;
         flex-wrap: wrap;
         margin-bottom: 40px;
@@ -17,7 +17,7 @@
             margin-right: 8px;
         }
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         &:nth-last-child(-n + 2) {
             margin-top: 15px;
         }
@@ -56,7 +56,7 @@
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         margin-top: 30px;
     }
 
@@ -76,13 +76,13 @@
          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         width: calc((100% - 30px) / 2);
         &:nth-child(odd) {
             margin-right: 30px;
@@ -120,6 +120,8 @@
     cursor: pointer;
 
     overflow: hidden;
+
+    
 }
 
 .projects-content__text {
@@ -134,12 +136,12 @@
     font-size: 18px;
     line-height: 1.55;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         width: 450px;
         
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         width: 354px;
     }
     
@@ -150,6 +152,10 @@
 
 .projects-content__image {
     display: block;
+    @media screen and (max-width:(768px - 0.02)) {
+        height: 294px;
+        width: 450px;
+    }
 }
 
 .projects-description {

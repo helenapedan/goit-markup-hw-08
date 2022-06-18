@@ -7,7 +7,7 @@
 }
 
 .advantage__item {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         width: 450px;
     
         &:not(:last-child) {
@@ -15,7 +15,7 @@
         }
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         width: calc((100% - 30px) / 2);
 
         &:nth-child(2n+1) {

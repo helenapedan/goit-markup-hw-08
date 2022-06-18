@@ -7,7 +7,7 @@
 }
 
 .clients-item {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         &:nth-child(odd) {
             margin-right: 30px;
         }
@@ -17,7 +17,7 @@
         }
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         margin-right: 30px;
         &:nth-child(3n) {
             margin-right: 0px;

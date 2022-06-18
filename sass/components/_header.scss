@@ -7,7 +7,7 @@
 .header-nav {
     align-items: center;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: inline-block;
     }
 
@@ -25,7 +25,7 @@
     font-family: $secondary-font;
     font-weight: 700;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: inline-block;
         margin-right: 276px;
         padding-top: 16px;
@@ -83,7 +83,7 @@
 }
 
 .menu-container {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: none;
         position: fixed;
         
@@ -110,7 +110,7 @@
 
 .header-nav__list {
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: block;
     }
 
@@ -161,7 +161,7 @@
 }
 
 .header-nav__item {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         &:not(:last-child) {
         margin-bottom: 32px;
         }
@@ -177,12 +177,12 @@
 }
 
 .header-contacts {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         display: block;
         margin-top: 302px;
     }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         display: inline-block;
         margin-top: 21px;
         margin-bottom: 21px;
@@ -216,7 +216,7 @@
     color: $text-color;
     letter-spacing: 0.02em;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:(768px - 0.02)) {
         font-size: 34px;
         line-height: 1.18;
         
@@ -260,7 +260,7 @@
     display: flex;
     margin-top: 64px;
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         display: none;
     }
 }

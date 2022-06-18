@@ -7,9 +7,14 @@
 }
 
 .teammate__list {
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        
         text-align: center;
+    
     }
 }
 
@@ -23,8 +28,24 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (min-width:768px) {
-        width: calc((100% - 30px) / 2);
+    @media screen and (max-width:(768px - 0.02)) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: (1200px - 0.02)) {
+        height: 536px;
+        width:calc((100% - 30px)/2);
+        margin-bottom: 30px;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+        }
     }
 
     @media screen and (min-width:1200px) {
@@ -32,6 +53,13 @@
         &:not(:last-child) {
                 margin-right: 30px;
         }
+    }
+}
+
+.teammate__photo {
+    @media screen and (min-width:768px) {
+        width: 354px;
+        height: 374px;
     }
 }
 
