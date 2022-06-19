@@ -1,8 +1,6 @@
 .footer-section {
     max-width: 100%;
     padding: 60px 0px;
-    // height: 603px;
-
     background-color: #2F303A;
 
     @media screen and (min-width:1200px) {
@@ -12,7 +10,7 @@
 
 .footer-container {
 
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
     }
@@ -22,18 +20,24 @@
     @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
         display: flex;
     }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer__address-wrap {
-    margin: 0 auto;
-    
+    @media screen and (max-width:(768px - 0.02)) {
+        text-align: center;
+    }
     
     @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
+        display: block;
         margin-left: 76px;
     }
 
     @media screen and (min-width:1200px){
-        display: flex;
+        // display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-right: 70px;
@@ -41,25 +45,37 @@
 }
 
 .footer__logo {
-    display: block;
-    text-align: center;
+    
+    
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
-
     color: $white-color;
+
+    @media screen and (max-width:(1200px -0.02)) {
+        display: block;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .footer__adress {
-    display: block;
-   text-align: center;
     margin-top: 20px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    
 
     color: $white-color;
+    @media screen and (max-width:(1200px -0.02)) {
+        display: block;
+       
+    }
 }
 
 .footer__contacts {
@@ -78,7 +94,7 @@
     }
     
     @media screen and (min-width:768px) and (max-width:(1200px - 0.02)) {
-        margin-right: 74px;
+       margin-left: 165px;
     }
 
     @media screen and (min-width:1200px) {
@@ -87,7 +103,10 @@
 }
 
 .appeal__title {
-    text-align: center;
+    @media screen and (max-width:(1200px - 0.02)) {
+        text-align: center;
+    }
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -97,9 +116,15 @@
 }
 
 .appeal__wrap-input {
-    display: block;
-    margin-top: 60px;
-}
+    @media screen and (max-width:(1200px - 0.02)) {
+        display: block;
+        margin-top: 60px;
+        }
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+    }
+    
 
 .footer__input {
     width: 450px;
@@ -129,8 +154,14 @@
 }
 
 .footer__button-wrapper {
-    display: block;
-    text-align: center;
+    @media screen and (max-width:(1200px - 0.02)) {
+        display: block;
+        text-align: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: inline-flex;
+        align-items: center;
+    }
 }
 
 .footer__button {
@@ -143,4 +174,8 @@
     @media screen and (min-width:1200px) {
         margin-left: 12px;
     }
+}
+
+.footer__icon {
+    margin-left: 10px;
 }
